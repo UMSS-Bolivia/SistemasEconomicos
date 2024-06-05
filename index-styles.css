@@ -1,0 +1,57 @@
+/* Estilos personalizados para la página principal */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px; /* Reducimos el margen superior para dispositivos móviles */
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Agregamos un fondo blanco para resaltar el contenido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #0056b3;
+    font-size: 24px; /* Aumentamos el tamaño del título para dispositivos móviles */
+    margin-bottom: 20px; /* Añadimos un margen inferior para separar el título del contenido */
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-top: 10px; /* Reducimos aún más el margen superior en dispositivos móviles */
+        padding: 15px; /* Reducimos el relleno para dispositivos móviles */
+    }
+
+    h1 {
+        font-size: 20px; /* Disminuimos el tamaño del título para dispositivos móviles */
+        margin-bottom: 15px; /* Reducimos el margen inferior del título para dispositivos móviles */
+    }
+
+    button {
+        padding: 8px 16px; /* Reducimos el relleno del botón para dispositivos móviles */
+        font-size: 14px; /* Disminuimos el tamaño del texto del botón para dispositivos móviles */
+    }
+}
