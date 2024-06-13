@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   font-family: "Encode Sans Condensed", sans-serif;
-  color: #E4D9D9;
 }
 
 body {
@@ -13,6 +12,10 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
+}
+
+h2, label {
+  color: #E4D9D9;
 }
 
 .container {
@@ -51,6 +54,7 @@ input[type=number] {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+  color: #002752;
 }
 
 input[type=text] {
@@ -61,6 +65,7 @@ input[type=text] {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+  color: #002752;
 }
 
 button#inicio {
