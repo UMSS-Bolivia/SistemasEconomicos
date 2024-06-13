@@ -1,0 +1,192 @@
+body {
+    /* Establece un degradado de color de arriba a abajo */
+    background-image: linear-gradient(to bottom, #e0f3ff, #0056b3); /* Color degradado */
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+}
+
+.container {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff; /* Fondo blanco para el contenedor */
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Resto de tus estilos CSS aquí */
+
+.container {
+    max-width: 90%; /* Utilizamos un porcentaje para que se ajuste al ancho del dispositivo */
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+
+button#borrar_datos {
+    margin-top: 10px;
+    background-color: #dc3545;
+}
+
+button#borrar_datos:hover {
+    background-color: #c82333;
+}
+
+button#inicio {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#inicio:hover {
+    background-color: #5a6268;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%; /* Reducimos el ancho máximo en dispositivos móviles */
+        margin: 20px auto;
+    }
+}
+/* Estilos para el contenedor del gráfico */
+#grafico-container {
+    width: 80%; /* Ancho del contenedor del gráfico */
+    margin: 20px auto; /* Margen para centrar el contenedor */
+}
+
+/* Estilos para el gráfico */
+#grafico {
+    width: 100%; /* Ancho del gráfico */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+.btn-inicio {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #28a745; /* Color rojo */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block; /* Asegura que el botón se muestre en línea */
+}
+
+.btn-inicio:hover {
+    background-color: #218838; /* Color rojo oscuro al pasar el mouse */
+}
+
+/* Estilo responsivo para el botón "Inicio" */
+@media only screen and (max-width: 600px) {
+    .btn-inicio {
+        width: 100%; /* Ancho del 100% en dispositivos móviles */
+    }
+}
+/* Ajustes para el botón de calcular VFN */
+button#calcularVFN {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #004085; /* Azul oscuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#calcularVFN:hover {
+    background-color: #002752; /* Azul oscuro más oscuro al pasar el mouse */
+}
+
+/* Estilo responsivo para el botón de calcular VFN */
+@media only screen and (max-width: 600px) {
+    button#calcularVFN {
+        width: 100%; /* Ancho del 100% en dispositivos móviles */
+    }
+}
+/* Ajustes para el botón de borrar datos */
+button#borrar_datos {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #dc3545; /* Color rojo */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#borrar_datos:hover {
+    background-color: #c82333; /* Rojo más oscuro al pasar el mouse */
+}
+
+/* Estilo responsivo para el botón de borrar datos */
+@media only screen and (max-width: 600px) {
+    button#borrar_datos {
+        width: 100%; /* Ancho del 100% en dispositivos móviles */
+    }
+} 
+#result {
+    margin-top: 20px; /* Espacio superior */
+    padding: 10px; /* Relleno */
+    background-color: #f0f0f0; /* Color de fondo */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+    #result {
+        width: 90%; /* Ancho del 90% en dispositivos móviles */
+        margin: 20px auto; /* Margen automático para centrarlo */
+    }
+}

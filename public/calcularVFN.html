@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de VFN</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
-        <h1>Calculadora de VFN</h1>
-        <label for="inversion_inicial">Inversión Inicial:</label>
-        <input type="number" id="inversion_inicial">
-        <br>
-        <label for="tasa_interes">Tasa de Interés:</label>
-        <input type="number" id="tasa_interes">
-        <br>
-        <label for="periodos">Número de Periodos:</label>
-        <input type="number" id="periodos">
-        <br>
-        <button onclick="calcularVFN()">Calcular VFN</button>
-        <button id="borrar_datos" onclick="borrarDatos()">Borrar Datos</button>
-        <br>
-        <a href="index.html"><button class="btn-inicio">Inicio</button></a>
-        <p id="resultado"></p>
+        <div class="form">
+            <h1>Calculadora de VFN</h1>
+            <label for="inversion_inicial">Inversión Inicial:</label>
+            <input type="number" id="inversion_inicial">
+            <br>
+            <label for="tasa_interes">Tasa de Interés:</label>
+            <input type="number" id="tasa_interes">
+            <br>
+            <label for="periodos">Número de Periodos:</label>
+            <input type="number" id="periodos">
+            <br>
+            <button class="btn-option" onclick="calcularVFN()">Calcular VFN</button>
+            <button class="btn-option" id="borrar_datos" onclick="borrarDatos()">Borrar Datos</button>
+            <br>
+            <a href="index.html"><button class="btn-inicio">Inicio</button></a>
+            <p id="resultado"></p>
+        </div>
     </div>
     <script src="script.js"></script>
     <script>
@@ -30,19 +34,20 @@
             var inversionInicial = parseFloat(document.getElementById("inversion_inicial").value);
             var tasaInteres = parseFloat(document.getElementById("tasa_interes").value);
             var periodos = parseInt(document.getElementById("periodos").value);
-            var vfn = inversionInicial * (1 + tasaInteres/100) ** periodos;
+            var vfn = inversionInicial * (1 + tasaInteres / 100) ** periodos;
             document.getElementById("resultado").innerHTML = "El Valor Futuro Neto (VFN) del proyecto es: " + vfn.toFixed(2);
-            
+
         }
-        
+
         function borrarDatos() {
             document.getElementById("inversion_inicial").value = "";
             document.getElementById("tasa_interes").value = "";
             document.getElementById("periodos").value = "";
             document.getElementById("resultado").innerHTML = "";
-            
+
         }
 
-        </script>
+    </script>
 </body>
+
 </html>

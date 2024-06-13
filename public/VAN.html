@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de VAN</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
-        <h2>Calculadora de Valor Actual Neto (VAN)</h2>
-        <label for="inversion">Inversión Inicial:</label>
-        <input type="number" id="inversion" placeholder="Ingrese la inversión inicial">
-        <label for="interes">Tasa de Interés (%):</label>
-        <input type="number" id="interes" placeholder="Ingrese la tasa de interés anual">
-        <label for="periodos">Nro de Periodos:</label>
-        <input type="number" id="periodos" placeholder="Ingrese el numero de periodos">
-        <label for="flujos">Flujos de Caja Anuales (separados por comas):</label>
-        <input type="text" id="flujos" placeholder="Ingrese los flujos de caja anuales">
-        <div class="btn-group">
-            <button onclick="calcularVAN()">Calcular VAN</button>
-            <button id="borrar_datos" onclick="borrarDatos()">Borrar Datos</button>
-            <br>
-            <a href="index.html" class="btn-inicio">Inicio</a>
+        <div class="form">
+            <h2>Calculadora de Valor Actual Neto (VAN)</h2>
+            <label for="inversion">Inversión Inicial:</label>
+            <input type="number" id="inversion" placeholder="Ingrese la inversión inicial">
+            <label for="interes">Tasa de Interés (%):</label>
+            <input type="number" id="interes" placeholder="Ingrese la tasa de interés anual">
+            <label for="periodos">Nro de Periodos:</label>
+            <input type="number" id="periodos" placeholder="Ingrese el numero de periodos">
+            <label for="flujos">Flujos de Caja Anuales (separados por comas):</label>
+            <input type="text" id="flujos" placeholder="Ingrese los flujos de caja anuales">
+            <div class="btn-group">
+                <button onclick="calcularVAN()">Calcular VAN</button>
+                <button id="borrar_datos" onclick="borrarDatos()">Borrar Datos</button>
+                <br>
+                <a href="index.html" class="btn-inicio">Inicio</a>
+            </div>
+            <div id="result"></div>
+
         </div>
-        <div id="result"></div>
-        
-    
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

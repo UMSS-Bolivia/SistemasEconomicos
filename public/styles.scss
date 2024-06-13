@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$primary-color: #3F4F7D;
+$secondary-color:#E4D9D9;
+$warning-color: #D45757;
+$smoke-color: rgba(18, 18, 18, 0.8);
+
+*{
+    font-family: "Encode Sans Condensed", sans-serif;
+    color: $secondary-color;
+}
+body {
+    background-image: url('assets/img/sistec.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 33%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: $smoke-color; 
+}
+
+.form{
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $warning-color;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+button#inicio {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: $secondary-color;
+    color: $warning-color;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#inicio:hover {
+    background-color: #5a6268;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 70%; /* Reducimos el ancho máximo en dispositivos móviles */
+        margin: 20px auto;
+    }
+
+    #result {
+        width: 90%; /* Ancho del 90% en dispositivos móviles */
+        margin: 20px auto; /* Margen automático para centrarlo */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        max-width: 50%;
+    }
+}
+/* Estilos para el contenedor del gráfico */
+#grafico-container {
+    width: 80%; /* Ancho del contenedor del gráfico */
+    margin: 20px auto; /* Margen para centrar el contenedor */
+}
+
+/* Estilos para el gráfico */
+#grafico {
+    width: 100%; /* Ancho del gráfico */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+.btn-inicio {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #218838; /* Color rojo */
+    color: $secondary-color;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block; /* Asegura que el botón se muestre en línea */
+}
+
+.btn-inicio:hover {
+    background-color: $warning-color;
+    color: $secondary-color;
+}
+
+button#calcularVFN {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #004085; /* Azul oscuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#calcularVFN:hover {
+    background-color: #002752; /* Azul oscuro más oscuro al pasar el mouse */
+}
+
+#result {
+    margin-top: 20px; /* Espacio superior */
+    padding: 10px; /* Relleno */
+    background-color: #f0f0f0; /* Color de fondo */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+}
