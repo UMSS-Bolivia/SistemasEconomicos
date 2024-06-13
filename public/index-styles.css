@@ -1,57 +1,98 @@
-/* Estilos personalizados para la página principal */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+  background-color: #121212;
+}
+
+* {
+  font-family: "Encode Sans Condensed", sans-serif;
 }
 
 .container {
-    text-align: center;
-    margin-top: 20px; /* Reducimos el margen superior para dispositivos móviles */
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff; /* Agregamos un fondo blanco para resaltar el contenido */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 3vh;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid #ccc;
+  border-radius: 9px;
+  background-color: #E4D9D9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+  margin-top: 1vh;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
-    color: #0056b3;
-    font-size: 24px; /* Aumentamos el tamaño del título para dispositivos móviles */
-    margin-bottom: 20px; /* Añadimos un margen inferior para separar el título del contenido */
+  color: #3F4F7D;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .button-container {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  padding: 10px 20px;
+  background-color: #3F4F7D;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #D45757;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3vh;
+}
+
+.grid .item {
+  border-radius: 9px;
+  width: calc(50% - 20px);
+  margin: 10px;
+  background-color: #E4D9D9;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.grid .item h1 {
+  text-align: center;
+  color: #D45757;
+}
+.grid .item p {
+  text-align: justify;
 }
 
 /* Media queries para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-    .container {
-        margin-top: 10px; /* Reducimos aún más el margen superior en dispositivos móviles */
-        padding: 15px; /* Reducimos el relleno para dispositivos móviles */
-    }
-
-    h1 {
-        font-size: 20px; /* Disminuimos el tamaño del título para dispositivos móviles */
-        margin-bottom: 15px; /* Reducimos el margen inferior del título para dispositivos móviles */
-    }
-
-    button {
-        padding: 8px 16px; /* Reducimos el relleno del botón para dispositivos móviles */
-        font-size: 14px; /* Disminuimos el tamaño del texto del botón para dispositivos móviles */
-    }
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-top: 10px;
+    padding: 15px;
+  }
+  .container a {
+    width: calc(100% - 20px);
+  }
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 1vh;
+  }
+  .grid .item {
+    width: calc(100% - 20px);
+  }
 }
+
+/*# sourceMappingURL=index-styles.css.map */
